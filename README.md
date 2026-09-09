@@ -19,3 +19,13 @@ git push u origin master
 git pull origin master
  
 ```
+
+##pyhton foundation
+
+-Primitive Variables
+-Function
+-Classlar
+-Class deep dive
+-Operation $ Conditions
+-Loops
+-...
