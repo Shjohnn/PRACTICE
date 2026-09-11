@@ -32,3 +32,20 @@ print(f"result: {result}  ")
 
 
 print('=================boolean=============== ')
+
+# y= input("Enter a number: ")
+# print(f"y: {y}  type(y): {type(y)}  ")
+# result = y.isnumeric()  #returns True if all characters in the string are numeric
+# print(f"result: {result}  ")
+
+
+#Truthy and Falsy values in Python
+
+#truthy > True
+#falsy > False 0 "" None [] {} set() ()
+
+test_falsy  ='' 
+print("the falsy: ", bool(test_falsy))  #False
+
+test_truthy = "Hello"
+print("the truthy: ", bool(test_truthy))  #True
