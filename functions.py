@@ -40,3 +40,15 @@ def give_greeting(name, age):
 
 give_greeting("Alice", 30)  # Positional arguments
 give_greeting(age=30, name="Alice")  # Keyword arguments
+
+
+
+print('======Scope================ ')
+
+b=100
+
+def calculate(a,b):
+    c=a+b
+    print(c)
+
+calculate(10,20)  # Output: 30
