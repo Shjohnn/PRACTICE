@@ -79,6 +79,7 @@ try:
     result2= car_dict['origin']
     a=car_dict.speed
     print(result2)
+#Key va Attribute ni bittada handle qilsa boladi
 except KeyError as err:
     print("no found")
 except AttributeError as err:
