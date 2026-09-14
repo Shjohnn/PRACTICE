@@ -48,3 +48,55 @@ print(new)
 Person.explain()
 #static method
 
+
+
+print("===============special methods==============")
+
+
+
+#Pythons most common special methods:
+#__init__, __new__, __str__, __call__,__eg__,__len__
+
+class Car():
+    #state
+    description="this class makes cars"
+
+    #constructor
+    def __new__(cls,*args):
+        print("__new__")
+        return super().__new__(cls)
+
+    def __init__(self, name, year):
+        self.name= name
+        self.year =year
+
+    #method
+    def start_engine(self):
+        print(self.name, "started!!!")
+
+    def stop_engine(self):
+        print(self.name, "stopped!!!")
+
+    def __str__(self):
+        return f"{self.name} mashinasi {self.year} da ishlab chiqarilgan"
+
+    def __call__(self):
+        print("bu fucntion kabi chaqrildi!!!")
+        return True
+    
+
+
+    
+mycar= Car("Spark", 2025)
+mycar.start_engine()
+mycar.stop_engine()
+
+your_car= Car("toyot", 2000)
+print(your_car)
+your_car() #fucntion kabi
+
+res= your_car()
+print(res)
+
+
+
