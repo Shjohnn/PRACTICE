@@ -11,7 +11,7 @@ print(f"The variable 'count' is of type: {count_type}  ")
 
 result1 = count.bit_count() #method of int class
 
-result2 = count.numerator #state
+result2 = count.numerator #
 
 print(f"result1: {result1}  result2: {result2} ")   
 
@@ -44,8 +44,13 @@ print('=================boolean=============== ')
 #truthy > True
 #falsy > False 0 "" None [] {} set() ()
 
-test_falsy  ='' 
-print("the falsy: ", bool(test_falsy))  #False
+list = [1, 2, 3,3,4,4,5,6,7,8,9]
+set ={1, 2, 3,3,4,4,5,6,7,8,9}
+print(list)
+print(set)
 
-test_truthy = "Hello"
-print("the truthy: ", bool(test_truthy))  #True
+# test_falsy  ='' 
+# print("the falsy: ", bool(test_falsy))  #False
+
+# test_truthy = "Hello"
+# print("the truthy: ", bool(test_truthy))  #True

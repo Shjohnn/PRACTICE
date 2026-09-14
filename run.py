@@ -1,9 +1,9 @@
 #Dunder __builtins__ , __init__,
 
-message =  'everything is working fine'
-print(message)
+a =  'everything is working fine'
+print(a)
 
-result = type(message)
+result = type(a)
 print(result)
 
 '''
