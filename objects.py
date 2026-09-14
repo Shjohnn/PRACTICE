@@ -68,3 +68,22 @@ del person_obj['single']
 for i in person_obj:
     print(i,person_obj[i])
 
+
+
+print("====Error handling system=======")
+
+car_dict = dict(name="toyota", year=2026, electric= True)
+
+try:
+    print("try ishladi")
+    result2= car_dict['origin']
+    a=car_dict.speed
+    print(result2)
+except KeyError as err:
+    print("no found")
+except AttributeError as err:
+    print("attribute error",err)
+else:
+    print("executed succesfully")
+finally:
+    print("closing logic")
