@@ -26,3 +26,45 @@ print(result1)
 
 result2 = ceil(1.1)
 print(result2)
+
+
+
+print("============Iterable objects===================")
+
+text ="MIT"
+for letter in text:
+    print(letter)
+
+range_obj= range(3)
+for ele in range_obj:
+    print(ele)
+
+
+
+
+print("============Dictionary===================")
+
+#Dictionary is JSON object!
+
+
+person = {"name": "TYLER", "age": 20, "single": True}
+person_obj = dict(name="Justin", age=25, single=True)
+
+print(person)
+print(person_obj)
+
+name = person_obj["name"]
+print(name)
+
+#method:get()
+
+nam= person_obj.get("name")
+print("nam:",nam)
+
+balance= person_obj.get("balance",0)
+print(balance) # 0 chiqadi
+
+del person_obj['single']
+for i in person_obj:
+    print(i,person_obj[i])
+
