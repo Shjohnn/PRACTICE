@@ -1,3 +1,5 @@
+
+
 // TASK G:
 
 // Yagona parametrga ega function tuzing.
