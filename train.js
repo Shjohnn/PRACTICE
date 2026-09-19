@@ -1,4 +1,28 @@
 
+// TASK K: 
+
+// Shunday function yozing, u string qabul qilsin va string ichidagi unli harflar sonini qaytarsin.
+// MASALAN: countVowels("string") return 1;
+
+
+
+
+
+function countVowels(str) {
+    let count = 0;
+    let vowels = "aeiou";
+
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i].toLowerCase())) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(countVowels("striiiing")); // 1
+
 
 // TASK G:
 
@@ -12,21 +36,21 @@
 
 
 
-function getHighestIndex(arr) {
-  let katta = arr[0];
-  let kattaIndex = 0;
+// function getHighestIndex(arr) {
+//   let katta = arr[0];
+//   let kattaIndex = 0;
 
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > katta) {
-      katta = arr[i];
-      kattaIndex = i;
-    }
-  }
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > katta) {
+//       katta = arr[i];
+//       kattaIndex = i;
+//     }
+//   }
 
-  return kattaIndex;
-}
+//   return kattaIndex;
+// }
 
-console.log(getHighestIndex([5, 1, 12, 21, 8])); // 3
+// console.log(getHighestIndex([5, 1, 12, 21, 8])); // 3
 
 
 
